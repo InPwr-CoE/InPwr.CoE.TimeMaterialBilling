@@ -3,19 +3,85 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "933f6bf8-4bbe-4b8f-b155-dcbd5d39f5a6",
+      "uniqueId": "82be7060-4f9b-4620-8b05-137ddc34575a",
       "type": "process",
       "input": {
         "type": "object",
         "properties": {
           "in_OrchestratorQueueName": {
-            "type": "string"
+            "type": "string",
+            "description": "Allows the Orchestrator queue name to be passed as an argument, instead of only being defined in the configuration file."
           },
           "in_OrchestratorQueueFolder": {
+            "type": "string",
+            "description": "Allows the Orchestrator folder name where the queue is created to be passed as an argument, instead of only being defined in the configuration file."
+          },
+          "ConfigurationFileName": {
+            "type": "string",
+            "x-default-expression": "\"Config.xlsx\"",
+            "default": "Config.xlsx"
+          },
+          "Config": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            },
+            "description": "Dictionary structure to store configuration data of the process (settings, constants and assets)."
+          },
+          "In_Jobnumber": {
+            "type": "string",
+            "x-default-expression": "\"25108\"",
+            "default": "25108"
+          },
+          "In_SPBillingFolder": {
+            "type": "string"
+          },
+          "In_PreviousFileURL": {
             "type": "string"
           }
         },
         "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "out_strDownloadFileLocation": {
+            "type": "string"
+          },
+          "out_strdriveItem_DownloadFile": {
+            "$ref": "#/definitions/job-attachment"
+          }
+        },
+        "definitions": {
+          "job-attachment": {
+            "type": "object",
+            "properties": {
+              "ID": {
+                "type": "string",
+                "description": "Orchestrator attachment key"
+              },
+              "FullName": {
+                "type": "string",
+                "description": "File name"
+              },
+              "MimeType": {
+                "type": "string",
+                "description": "The MIME type of the content, such as \"application/json\" or \"image/png"
+              },
+              "Metadata": {
+                "type": "object",
+                "description": "Dictionary<string, string> of metadata",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "ID"
+            ],
+            "x-uipath-resource-kind": "JobAttachment"
+          }
+        }
       }
     }
   ]

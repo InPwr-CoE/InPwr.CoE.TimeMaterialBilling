@@ -1,7 +1,7 @@
 {
-  "name": "Time_Material_Billing",
+  "name": "TimeAndMaterialBilling",
   "projectId": "905e641b-b6bf-4f8b-9361-5a40391685bf",
-  "description": "Robotic Enterprise Framework",
+  "description": "UiPath REFramework Template",
   "main": "Main.xaml",
   "dependencies": {
     "InPwr.CoE.CustomComponent.Mail": "[1.0.17]",
@@ -39,7 +39,6 @@
     "projectProfile": "Developement",
     "outputType": "Process",
     "libraryOptions": {
-      "includeOriginalXaml": false,
       "privateWorkflows": []
     },
     "processOptions": {

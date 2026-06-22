@@ -1,5 +1,5 @@
 {
-  "Name": "UiPath_REFramework",
+  "Name": "TimeAndMaterialBilling",
   "ProjectType": "Process",
   "Description": "UiPath REFramework Template",
   "MainFile": "Main.xaml"
