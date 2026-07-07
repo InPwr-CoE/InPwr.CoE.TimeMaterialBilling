@@ -90,18 +90,6 @@
       "DataSourceItems": null
     },
     {
-      "Name": "out_strDownloadFileLocation",
-      "DisplayName": "out_strDownloadFileLocation",
-      "Category": null,
-      "Tooltip": null,
-      "Placeholder": null,
-      "Widget": null,
-      "IsRequired": false,
-      "IsPrincipal": true,
-      "ArgumentType": 0,
-      "DataSourceItems": null
-    },
-    {
       "Name": "out_strdriveItem_DownloadFile",
       "DisplayName": "out_strdriveItem_DownloadFile",
       "Category": null,

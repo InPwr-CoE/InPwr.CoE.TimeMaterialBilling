@@ -1,0 +1,83 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "out_strDownloadFileLocation&StateMachine_1",
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "JobData&StateMachine_1",
+        "str_FolderResponse&Sequence_17",
+        "str_BillingFolderURL&Sequence_17",
+        "str_o365Appid&Sequence_17",
+        "secstr_o365Password&Sequence_17",
+        "downloadResponse&Sequence_60",
+        "dt_ExceptionTable&Sequence_60",
+        "dt_EmailTable&Sequence_60",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder",
+        "ConfigurationFileName",
+        "Config",
+        "In_Jobnumber",
+        "In_SPBillingFolder",
+        "In_PreviousFileURL",
+        "out_strdriveItem_DownloadFile"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "RnSuccess&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_MasterTemplatePath",
+        "in_SPBillingFolder",
+        "in_JobNumber",
+        "in_PrevInvNumber",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
